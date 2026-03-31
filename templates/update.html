@@ -1,6 +1,6 @@
-{ % extends "base.html" % }
+{% extends "base.html" %}
 
-{ % block content % }
+{% block content %}
 <head><title>Update Item</title></head>
 
     <h1>Update Item</h1>
@@ -8,4 +8,4 @@
     <input type="text" name="name" value="{{ item.name }}">
     <button type="submit">Update</button>
     </form>
-{ % endblock % }
+{% endblock %}

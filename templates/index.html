@@ -1,6 +1,6 @@
-{ % extends "base.html" % }
+{% extends "base.html" %}
 
-{ % block content % }
+{% block content %}
 <head><title>Items List</title></head>
     <h1>Items List</h1>
    
@@ -15,4 +15,4 @@
         {% endfor %}
     </ul>
     <a href="{{ url_for('create_item') }}" class="btn btn-primary mt-3">Create New Item</a>
-{ % endblock % }    
+{% endblock %}    
