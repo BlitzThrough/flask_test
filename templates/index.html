@@ -7,8 +7,8 @@
     <ul>
         {% for item in items %}
             <li>{{ item.name }}
-            <a href="{{ url_for('update', idNum=item.idNum) }}">Edit</a>
-            <form action="{{ url_for('delete', idNum=item.idNum) }}" method="POST" style="display:inline;">
+            <a href="{{ url_for('update_item', idNum=item.id) }}">Edit</a>
+            <form action="{{ url_for('delete_item', idNum=item.id) }}" method="POST" style="display:inline;">
             <button type="submit">Delete</button>
             </form>
             </li>
